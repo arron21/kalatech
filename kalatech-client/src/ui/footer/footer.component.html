@@ -1,0 +1,9 @@
+<section class="content-grid">
+  <div class="grid grid-x-x">
+    <nav [ngClass]="{centered}">
+      <div *ngFor="let l of links">
+        <a routerLinkActive="active" [routerLink]="l.link">{{ l.label }}</a>
+      </div>
+    </nav>
+  </div>
+</section>

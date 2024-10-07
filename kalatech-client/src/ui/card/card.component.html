@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="{ hasHeading: cardTitle, hasImage: image }">
+  @if(image) {  
+    <img [src]="image" alt="Card Image" />
+  }
+  <div class="card-content">
+    @if(cardTitle){
+      <app-heading>{{ cardTitle }}</app-heading>
+      }
+      @if(subTitle){
+      <p class="sub-title">{{ subTitle }}</p>
+      }
+    <ng-content></ng-content>
+  </div>
+</div>

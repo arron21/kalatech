@@ -1,0 +1,15 @@
+a {
+  margin: var(--space-3);
+  color: var(--type-color);
+  display: block;
+  align-content: center;
+  width: 1em;
+}
+
+:host {
+  margin: var(--space-4);
+}
+
+div {
+  display: flex;
+}

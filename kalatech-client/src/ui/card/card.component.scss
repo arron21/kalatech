@@ -1,0 +1,62 @@
+.card {
+  margin: var(--space-2);
+  border: var(--border-width) solid var(--off-background);
+  border-radius: var(--roundness);
+}
+
+.card-content {
+  padding: var(--space-3);
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border-top-left-radius: var(--roundness);
+  border-top-right-radius: var(--roundness);
+}
+
+:host {
+  ::ng-deep app-heading div {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  ::ng-deep p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  ::ng-deep p.sub-title {
+    opacity: 0.7;
+    margin-bottom: var(--space-3);;
+  }
+  
+  &.has-image {
+    ::ng-deep .card > div {
+      flex: 1;
+    }
+    .card {
+      display: flex;
+      @media screen and (max-width: 480px) {
+        
+        flex-direction: column;
+      }
+    }
+    
+  }
+}
+
+.hasHeading {
+  margin-top: var(--shadow-1);
+}
+
+
+.hasImage {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  // margin: calc(-1* var(--space-3)) calc(-1* var(--space-3)) 0 calc(-1* var(--space-3));
+  // max-height: 120px;
+  // object-fit: cover;
+}
