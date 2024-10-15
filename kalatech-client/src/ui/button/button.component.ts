@@ -13,4 +13,5 @@ export class ButtonComponent {
   @Input() variant: 'solid' | 'outline' | 'ghost' | 'link' = 'solid';
   @Input() role: 'create' | 'destroy' | 'info' | 'neutral' | '' = '';
   @Input() disabled: boolean = false;
+  @Input() buttonType: string = 'button'
 }
