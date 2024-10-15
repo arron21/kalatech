@@ -1,3 +1,15 @@
 .logo {
     width: 50px;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    img {
+        margin: 8px 8px 8px 0;
+    }
+    font-size: 2em;
+}

@@ -1,5 +1,5 @@
 :root {
-  // --input-bg: var(--foreground);
+  --input-bg: var(--off-background);
 }
 
 .ng-select.custom {
@@ -16,4 +16,29 @@
 
 .ng-dropdown-panel {
   background-color: var(--input-bg);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  display: block;
+  width: 100%;
+  background-color: var(--input-bg);
+  border: 0px;
+  border-radius: var(--br-2);
+  padding: var(--space-2);
+  color: var(--foreground);
+  font-size: var(--fs-1);
+  margin-bottom: var(--space-2);
+  &:focus {
+    transition: 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    outline: none;
+    box-shadow: var(--shadow-1);
+  }
+}
+
+button {
+  // background-color: var(--foreground);
+  // border: 0px;
 }

@@ -24,6 +24,10 @@ export class AppComponent {
       link: '/services'
     },
     {
+      label: 'Portfolio',
+      link: '/portfolio'
+    },
+    {
       label: 'About',
       link: '/about'
     },

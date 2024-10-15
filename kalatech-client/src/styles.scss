@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@use 'css/styles.scss'
+@use 'ui/css/styles.scss';
+
+.content-grid {
+    h1:first-of-type, h2:first-of-type {
+        margin-top: var(--space-4);
+    }
+}
