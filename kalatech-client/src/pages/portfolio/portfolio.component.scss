@@ -2,7 +2,8 @@ hr {
     margin: 2rem 0;
 }
 .portfolio-image {
-    max-width: 500px;
+    max-width: 100%;
+    width: 500px;
     margin: auto;
     border-radius: var(--br-2);
     box-shadow: var(--shadow-2);
